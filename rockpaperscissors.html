@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME ROCK | PAPER | SCISSORS</title>
-    <script>
-        // 1=ROCK/2=PAPER/3=SCISSORS
-    </script>
-</head>
-<body>
-    <h1>ROCK | PAPER | SCISSORS</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GAME ROCK | PAPER | SCISSORS</title>
+        <script>
+            // 1=ROCK/2=PAPER/3=SCISSORS
+            let player = 0
+            let pc = 2
+            player = prompt('Choose: 1 for rock, 2 for paper, 3 for scissors')
+            // alert('Chose ' + player)
+            if(player == 1) {
+                alert('Chose ROCK')
+            } else if(player == 2) {
+                alert('Chose PAPER')
+            } else if(player == 3) {
+                alert('Chose SCISSORS')
+            } else {
+                alert('YOU CHOSE TO LOSE 😢')
+            }
+        </script>
+    </head>
+    <body>
+        <h1>ROCK | PAPER | SCISSORS</h1>
+    </body>
 </html>
