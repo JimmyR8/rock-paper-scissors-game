@@ -7,17 +7,36 @@
         <script>
             // 1=ROCK/2=PAPER/3=SCISSORS
             let player = 0
-            let pc = 2
+            let pc = 3
             player = prompt('Choose: 1 for rock, 2 for paper, 3 for scissors')
             // alert('Chose ' + player)
             if(player == 1) {
-                alert('Chose ROCK')
+                alert('You chose 🥌')
             } else if(player == 2) {
-                alert('Chose PAPER')
+                alert('You chose 📰')
             } else if(player == 3) {
-                alert('Chose SCISSORS')
+                alert('You chose ✂')
             } else {
                 alert('YOU CHOSE TO LOSE 😢')
+            }
+            if(pc == 1) {
+                alert('PC chose 🥌')
+            } else if(pc == 2) {
+                alert('PC chose 📰')
+            } else if(pc == 3) {
+                alert('PC chose ✂')
+            }
+            //COMBAT
+            if(pc == player) {
+                alert('TIE 😐')
+            } else if(player == 1 && pc == 3) {
+                alert('YOU WIN 🎉')
+            } else if(player == 2 && pc == 1) {
+                alert('YOU WIN 🎉')
+            } else if(player == 3 && pc == 2) {
+                alert('YOU WIN 🎉')
+            } else {
+                alert('YOU LOSE 😭')
             }
         </script>
     </head>
